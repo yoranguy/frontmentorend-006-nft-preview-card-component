@@ -68,7 +68,7 @@ const NFTPreviewCard = (card: Card) => {
   return (
 
     
-    <div className="nft-preview-card">
+    <div className="nft-preview-card" id={id.toString()}>
       <div className="nft-preview-card-image">
         <a href="#" target="_blank">
           <img src={coinImage} alt={coinName} className="base-image" />
