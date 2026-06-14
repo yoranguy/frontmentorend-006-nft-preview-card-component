@@ -34,23 +34,68 @@ interface Card {
   creatorName: string;
 }
 
-interface Cards {
-  card: Card[];
-}
+// interface Cards {
+//   card: Card[];
+// }
 
 function App() {
   // const [count, setCount] = useState(0)
 
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<Card[]>([
+        // {
+        //     "id":1,
+        //     "coinImage": "/src/assets/images/image-equilibrium.jpg",
+        //     "coinName": "Equilibrium",
+        //     "cardTitle": "Equilibrium #3429",
+        //     "cardDescription": "Our Equlibrium collection promotes balance and calm.",
+        //     "coinIcon": "/src/assets/images/icon-ethereum.svg",
+        //     "coinValue": 0.041,
+        //     "coinTicker": "ETH",
+        //     "tokenTimeLeft": 3,
+        //     "avatarImage": "/src/assets/images/image-avatar.png",
+        //     "creatorName": "Jules Wyvern"
+        // },
+        // {
+        //     "id":2,
+        //     "coinImage": "/src/assets/images/image-equilibrium.jpg",
+        //     "coinName": "Equilibrium",
+        //     "cardTitle": "Equilibrium #3430",
+        //     "cardDescription": "Our Equlibrium collection promotes balance and calm.",
+        //     "coinIcon": "/src/assets/images/icon-ethereum.svg",
+        //     "coinValue": 0.041,
+        //     "coinTicker": "ETH",
+        //     "tokenTimeLeft": 3,
+        //     "avatarImage": "/src/assets/images/image-avatar.png",
+        //     "creatorName": "Jules Wyvern"
+        // }
+    ]);
 
   function getCards() {
-    return null;
+    return cards;
+  }
+
+  function outputCards()
+  {
+    return cards.map((card) => (
+      <NFTPreviewCard id={card.id} 
+      coinImage={card.coinImage} 
+      coinName={card.coinName}
+      cardTitle={card.cardTitle}
+      cardDescription={card.cardDescription}
+      coinIcon={card.coinIcon}
+      coinTicker={card.coinTicker}
+      coinValue={card.coinValue}
+      tokenTimeLeft={card.tokenTimeLeft}
+      avatarImage={card.avatarImage}
+      creatorName={card.creatorName}
+    />)
+    )
   }
 
   useEffect(() => {
     console.log("start - useEffect");
 
-    fetch('http://localhost:8000/cards')
+    fetch('http://localhost:8000/card')
       .then(response => {
         return response.json();
       })
@@ -62,16 +107,14 @@ function App() {
 
   return (
     
-    <div>
-      {cards.map((card) => (
-        <NFTPreviewCard card={card} />
-      ))}
-      
-
+    <div className="collection">
+      {outputCards()}
     </div>
-  );
+    
+
+  
+    );
 }
 
-
-
 export default App;
+
