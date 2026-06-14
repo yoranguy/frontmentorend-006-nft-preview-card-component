@@ -70,9 +70,9 @@ function App() {
         // }
     ]);
 
-  function getCards() {
-    return cards;
-  }
+  // function getCards() {
+  //   return cards;
+  // }
 
   function outputCards()
   {

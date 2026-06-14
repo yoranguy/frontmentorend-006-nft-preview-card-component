@@ -1,7 +1,7 @@
 import "./NFTPreviewCard.css";
-import equImage from "/src/assets/images/image-equilibrium.jpg";
-import equIcon from "/src/assets/images/icon-ethereum.svg";
-import profileImage from "/src/assets/images/image-avatar.png";
+// import equImage from "/src/assets/images/image-equilibrium.jpg";
+// import equIcon from "/src/assets/images/icon-ethereum.svg";
+// import profileImage from "/src/assets/images/image-avatar.png";
 import clockIcon from "/src/assets/images/icon-clock.svg";
 
 // type Card = {
@@ -73,7 +73,7 @@ const NFTPreviewCard = (card: Card) => {
         <a href="#" target="_blank">
           <img src={coinImage} alt={coinName} className="base-image" />
           <img
-            src="/src/assets/images/icon-view.svg"
+            src={coinIcon}
             alt={coinName}
             className="hover-image"
           />
