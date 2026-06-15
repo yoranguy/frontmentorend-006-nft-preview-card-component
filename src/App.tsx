@@ -23,15 +23,15 @@ function App() {
   const [cards, setCards] = useState<Card[]>([
     {
         "id": 1,
-        "coinImage": "/src/assets/images/image-equilibrium.jpg",
+        "coinImage": "./src/assets/images/image-equilibrium.jpg",
         "coinName": "Equilibrium",
         "cardTitle": "Equilibrium #3429",
         "cardDescription": "Our Equlibrium collection promotes balance and calm.",
-        "coinIcon": "/src/assets/images/icon-ethereum.svg",
+        "coinIcon": "./src/assets/images/icon-ethereum.svg",
         "coinValue": 0.041,
         "coinTicker": "ETH",
         "tokenTimeLeft": 3,
-        "avatarImage": "/src/assets/images/image-avatar.png",
+        "avatarImage": "./src/assets/images/image-avatar.png",
         "creatorName": "Jules Wyvern"
     }
   ]);
@@ -60,7 +60,7 @@ function App() {
 
       fetch("http://localhost:8000/card")
         .then((response) => {
-          return ((!response.ok)  ? response.json() : null)
+          return ((!response.ok) ? response.json() : null)
         })
         .then((data) => {
           console.log(data);
