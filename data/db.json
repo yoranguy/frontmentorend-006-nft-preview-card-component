@@ -2,55 +2,55 @@
     "card":[
         {
             "id":1,
-            "coinImage": "/src/assets/images/image-equilibrium.jpg",
+            "coinImage": "./src/assets/images/image-equilibrium.jpg",
             "coinName": "Equilibrium",
             "cardTitle": "Equilibrium #3429",
             "cardDescription": "Our Equlibrium collection promotes balance and calm.",
-            "coinIcon": "/src/assets/images/icon-ethereum.svg",
+            "coinIcon": "./src/assets/images/icon-ethereum.svg",
             "coinValue": 0.041,
             "coinTicker": "ETH",
             "tokenTimeLeft": 3,
-            "avatarImage": "/src/assets/images/image-avatar.png",
+            "avatarImage": "./src/assets/images/image-avatar.png",
             "creatorName": "Jules Wyvern"
         },
         {
             "id":2,
-            "coinImage": "/src/assets/images/image-equilibrium.jpg",
+            "coinImage": "./src/assets/images/image-equilibrium.jpg",
             "coinName": "Bitcoin",
             "cardTitle": "Bitcoin #1",
             "cardDescription": "Our Bitcoin collection promotes balance and calm.",
-            "coinIcon": "/src/assets/images/icon-ethereum.svg",
+            "coinIcon": "./src/assets/images/icon-ethereum.svg",
             "coinValue": 1,
             "coinTicker": "ETH",
             "tokenTimeLeft": 10,
-            "avatarImage": "/src/assets/images/image-avatar.png",
+            "avatarImage": "./src/assets/images/image-avatar.png",
             "creatorName": "Tuan Le"
         },
         {
             "id":3,
-            "coinImage": "/src/assets/images/image-equilibrium.jpg",
+            "coinImage": "./src/assets/images/image-equilibrium.jpg",
             "coinName": "Ethereum",
             "cardTitle": "Ethereum #2",
             "cardDescription": "Our Ethereum collection promotes balance and calm.",
-            "coinIcon": "/src/assets/images/icon-ethereum.svg",
+            "coinIcon": "./src/assets/images/icon-ethereum.svg",
             "coinValue": 0.041,
             "coinTicker": "ETH",
             "tokenTimeLeft": 5,
-            "avatarImage": "/src/assets/images/image-avatar.png",
+            "avatarImage": "./src/assets/images/image-avatar.png",
             "creatorName": "Shane Yu"
         }
         ,
         {
             "id":4,
-            "coinImage": "/src/assets/images/image-equilibrium.jpg",
+            "coinImage": "./src/assets/images/image-equilibrium.jpg",
             "coinName": "Tether",
             "cardTitle": "Tether #30",
             "cardDescription": "Our Tether collection promotes balance and calm.",
-            "coinIcon": "/src/assets/images/icon-ethereum.svg",
+            "coinIcon": "./src/assets/images/icon-ethereum.svg",
             "coinValue": 0.53,
             "coinTicker": "ETH",
             "tokenTimeLeft": 4,
-            "avatarImage": "/src/assets/images/image-avatar.png",
+            "avatarImage": "./src/assets/images/image-avatar.png",
             "creatorName": "Shane Yu"
         }
     ]

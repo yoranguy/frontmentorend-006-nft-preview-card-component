@@ -4,19 +4,6 @@ import "./NFTPreviewCard.css";
 // import profileImage from "/src/assets/images/image-avatar.png";
 import clockIcon from "/src/assets/images/icon-clock.svg";
 
-// type Card = {
-//     id: number;
-//     coinImage: string;
-//     coinName: string;
-//     cardTitle: string;
-//     cardDescription: string;
-//     coinIcon: string;
-//     coinTicker: string;
-//     coinValue: number;
-//     tokenTimeLeft: number;
-//     avatarImage: string;
-//     creatorName: string;
-// }
 
 interface Card {
   id: number;
@@ -32,14 +19,8 @@ interface Card {
   creatorName: string;
 }
 
-// interface Cards {
-//     card: Array<Card>[];
-// }
-
-
-const NFTPreviewCard = (card: Card) => { 
+const NFTPreviewCard = (card: Card) => {
   console.log(card);
-
 
   const id = card.id;
   const coinImage = card.coinImage;
@@ -66,17 +47,11 @@ const NFTPreviewCard = (card: Card) => {
   // const creatorName = "Jules Wyvern";
 
   return (
-
-    
     <div className="nft-preview-card" id={id.toString()}>
       <div className="nft-preview-card-image">
         <a href="#" target="_blank">
           <img src={coinImage} alt={coinName} className="base-image" />
-          <img
-            src={coinIcon}
-            alt={coinName}
-            className="hover-image"
-          />
+          <img src={coinIcon} alt={coinName} className="hover-image" />
         </a>
       </div>
       <div className="nft-preview-title">
