@@ -34,6 +34,7 @@ const NFTPreviewCard = (card: Card) => {
   const avatarImage = card.avatarImage;
   const creatorName = card.creatorName;
 
+  //static test
   // const coinImage = equImage;
   // const coinName = "Equilibrium";
   // const cardTitle = "Equilibrium #3429";
