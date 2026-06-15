@@ -21,37 +21,20 @@ function App() {
   // const [count, setCount] = useState(0)
 
   const [cards, setCards] = useState<Card[]>([
-    // {
-    //     "id":1,
-    //     "coinImage": "/src/assets/images/image-equilibrium.jpg",
-    //     "coinName": "Equilibrium",
-    //     "cardTitle": "Equilibrium #3429",
-    //     "cardDescription": "Our Equlibrium collection promotes balance and calm.",
-    //     "coinIcon": "/src/assets/images/icon-ethereum.svg",
-    //     "coinValue": 0.041,
-    //     "coinTicker": "ETH",
-    //     "tokenTimeLeft": 3,
-    //     "avatarImage": "/src/assets/images/image-avatar.png",
-    //     "creatorName": "Jules Wyvern"
-    // },
-    // {
-    //     "id":2,
-    //     "coinImage": "/src/assets/images/image-equilibrium.jpg",
-    //     "coinName": "Equilibrium",
-    //     "cardTitle": "Equilibrium #3430",
-    //     "cardDescription": "Our Equlibrium collection promotes balance and calm.",
-    //     "coinIcon": "/src/assets/images/icon-ethereum.svg",
-    //     "coinValue": 0.041,
-    //     "coinTicker": "ETH",
-    //     "tokenTimeLeft": 3,
-    //     "avatarImage": "/src/assets/images/image-avatar.png",
-    //     "creatorName": "Jules Wyvern"
-    // }
+    {
+        "id": 1,
+        "coinImage": "/src/assets/images/image-equilibrium.jpg",
+        "coinName": "Equilibrium",
+        "cardTitle": "Equilibrium #3429",
+        "cardDescription": "Our Equlibrium collection promotes balance and calm.",
+        "coinIcon": "/src/assets/images/icon-ethereum.svg",
+        "coinValue": 0.041,
+        "coinTicker": "ETH",
+        "tokenTimeLeft": 3,
+        "avatarImage": "/src/assets/images/image-avatar.png",
+        "creatorName": "Jules Wyvern"
+    }
   ]);
-
-  // function getCards() {
-  //   return cards;
-  // }
 
   function outputCards() {
     return cards.map((card) => (
@@ -77,7 +60,7 @@ function App() {
 
       fetch("http://localhost:8000/card")
         .then((response) => {
-          return response.json();
+          return ((!response.ok)  ? response.json() : null)
         })
         .then((data) => {
           console.log(data);
