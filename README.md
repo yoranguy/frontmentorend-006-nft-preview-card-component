@@ -17,6 +17,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
+  - [Instructions](#instructions)
 
 
 ## Overview
@@ -73,6 +74,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
+## Instructions
+```console
+npm run dev
 
+npx json-server --watch data/db.json --port 8000
+```
+Run Developer environment
 
-
+Starts a mock REST API server
